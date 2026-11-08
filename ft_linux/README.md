@@ -29,7 +29,9 @@ Acl, Attr, Autoconf, Automake, Bash, Bc, Binutils, Bison, Bzip2, Check, Coreutil
 
 ```
 .
-├── docs/                       # Technical documentation
+├── docs/
+│   ├── en/                     # Technical documentation + subject
+│   └── ru/                     # Step-by-step guide + LFS tutorial
 ├── sources/
 │   ├── wget-list.txt           # 90 package URLs
 │   ├── md5sums.txt             # Checksums

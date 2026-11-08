@@ -3,7 +3,7 @@
 Код в репозитории готов. Дальше вся работа идёт на **виртуальной машине**.  
 Следуй шагам по порядку. Не перескакивай фазы.
 
-Читать параллельно: [учебник LFS](lfs-ru/README.md)
+Читать параллельно: [учебник LFS](lfs/README.md)
 
 ---
 
@@ -299,7 +299,7 @@ bash scripts/05-build-system.sh --from <имя_пакета>
 bash scripts/05-build-system.sh --list
 ```
 
-При странных ошибках `configure`/`make` — смотри официальный LFS Ch.8 и русский учебник [07-basic-system.md](lfs-ru/07-basic-system.md).
+При странных ошибках `configure`/`make` — смотри официальный LFS Ch.8 и русский учебник [07-basic-system.md](lfs/07-basic-system.md).
 
 Особенно внимательно доведи **udev/eudev** по книге LFS, если скрипт предупредит.
 

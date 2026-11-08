@@ -32,4 +32,6 @@ setup-lfs-user.sh
 
 ## Related files
 
-- [README.md](../README.md) — project quick start
+- [README.md](../../README.md) — project quick start
+- [en.subject.pdf](en.subject.pdf) — project subject
+- [Русская документация](../ru/README.md) — step-by-step guide and LFS tutorial in Russian

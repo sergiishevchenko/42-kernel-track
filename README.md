@@ -14,40 +14,38 @@ Each project lives in its own directory and has its own `README.md` with details
 
 ### Linux
 
-| Project | Topic | Status |
-|---------|-------|--------|
-| [ft_linux](./ft_linux) | Custom Linux distribution built from source (Linux From Scratch) | Done |
-| [little-penguin-1](./little-penguin-1) | Introduction to Linux kernel development: kernel builds, modules, patches, debugfs | Done |
-| drivers-and-interrupts | Keyboard driver as a kernel module, interrupt handling | Done |
-| process-and-memory | Custom syscall exposing process and memory information | Done |
-| filesystem | Filesystem implementation as a kernel module | In progress |
-| userspace_digression | Userspace side of the kernel track | In progress |
+<table>
+  <tr>
+    <th width="200" align="left">Project</th>
+    <th width="500" align="left">Topic</th>
+    <th width="110" align="left">Status</th>
+  </tr>
+  <tr><td><a href="./ft_linux">ft_linux</a></td><td>Custom Linux distribution built from source (Linux From Scratch)</td><td>Done</td></tr>
+  <tr><td><a href="./little-penguin-1">little-penguin-1</a></td><td>Introduction to Linux kernel development: kernel builds, modules, patches, debugfs</td><td>Done</td></tr>
+  <tr><td>drivers-and-interrupts</td><td>Keyboard driver as a kernel module, interrupt handling</td><td>Done</td></tr>
+  <tr><td>process-and-memory</td><td>Custom syscall exposing process and memory information</td><td>Done</td></tr>
+  <tr><td>filesystem</td><td>Filesystem implementation as a kernel module</td><td>In progress</td></tr>
+  <tr><td>userspace_digression</td><td>Userspace side of the kernel track</td><td>In progress</td></tr>
+</table>
 
 ### Kernel From Scratch (KFS)
 
 An i386 kernel written in C and assembly, booted by GRUB and run in QEMU.
 
-| Project | Topic | Status |
-|---------|-------|--------|
-| [kfs-1](./kfs-1) | Multiboot, GRUB, VGA text mode, basic kernel library | In progress |
-| [kfs-2](./kfs-2) | Global Descriptor Table, kernel stack, debug shell | In progress |
-| kfs-3 | Memory: paging, physical and virtual allocators | — |
-| kfs-4 | Interrupts: IDT, signals, keyboard | — |
-| kfs-5 | Processes: scheduling, `fork`, `wait`, `exit` | — |
-| kfs-6 | Filesystem: IDE driver, ext2 | — |
-| kfs-7 | Syscalls, sockets, environment | — |
-| kfs-8 | Kernel modules | — |
-| kfs-9 | ELF loading and execution | — |
-| kfs-x | Complete POSIX-compliant UNIX system | — |
-
-## Repository layout
-
-```
-.
-├── assets/              # README images
-├── ft_linux/            # LFS build scripts, configs, docs
-├── little-penguin-1/    # Kernel assignments 00–09
-├── kfs-1/               # KFS: boot + screen
-├── kfs-2/               # KFS: GDT + stack
-└── ...                  # Next projects are added as separate directories
-```
+<table>
+  <tr>
+    <th width="200" align="left">Project</th>
+    <th width="500" align="left">Topic</th>
+    <th width="110" align="left">Status</th>
+  </tr>
+  <tr><td><a href="./kfs-1">kfs-1</a></td><td>Multiboot, GRUB, VGA text mode, basic kernel library</td><td>In progress</td></tr>
+  <tr><td><a href="./kfs-2">kfs-2</a></td><td>Global Descriptor Table, kernel stack, debug shell</td><td>In progress</td></tr>
+  <tr><td>kfs-3</td><td>Memory: paging, physical and virtual allocators</td><td>—</td></tr>
+  <tr><td>kfs-4</td><td>Interrupts: IDT, signals, keyboard</td><td>—</td></tr>
+  <tr><td>kfs-5</td><td>Processes: scheduling, <code>fork</code>, <code>wait</code>, <code>exit</code></td><td>—</td></tr>
+  <tr><td>kfs-6</td><td>Filesystem: IDE driver, ext2</td><td>—</td></tr>
+  <tr><td>kfs-7</td><td>Syscalls, sockets, environment</td><td>—</td></tr>
+  <tr><td>kfs-8</td><td>Kernel modules</td><td>—</td></tr>
+  <tr><td>kfs-9</td><td>ELF loading and execution</td><td>—</td></tr>
+  <tr><td>kfs-x</td><td>Complete POSIX-compliant UNIX system</td><td>—</td></tr>
+</table>

@@ -67,7 +67,7 @@ The build follows the standard LFS methodology in three environments:
 ft_linux/
 ├── README.md        # Quick start guide
 ├── .gitignore       # Excludes tarballs, VM images, build artifacts
-├── docs/            # This documentation
+├── docs/            # Documentation: en/ and ru/
 ├── sources/         # Package URLs, checksums, download script
 ├── configs/         # Templates for /etc and /boot/grub
 └── scripts/         # Numbered build automation scripts
