@@ -32,5 +32,4 @@ setup-lfs-user.sh
 
 ## Related files
 
-- [PLAN.md](../PLAN.md) — build checklist
 - [README.md](../README.md) — project quick start

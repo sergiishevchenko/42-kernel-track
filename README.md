@@ -2,7 +2,7 @@
 
 Monorepo for the **Kernel** branch of the 42 cursus (42 Lausanne) — from building a Linux distribution by hand, through Linux kernel module development, to writing an operating system kernel from scratch.
 
-Each project lives in its own directory and has its own `README.md` / `PLAN.md` with details.
+Each project lives in its own directory and has its own `README.md` with details.
 
 ## Track map
 

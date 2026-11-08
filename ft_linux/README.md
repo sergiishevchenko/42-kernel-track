@@ -29,7 +29,6 @@ Acl, Attr, Autoconf, Automake, Bash, Bc, Binutils, Bison, Bzip2, Check, Coreutil
 
 ```
 .
-├── PLAN.md                     # Build plan with full checklist
 ├── docs/                       # Technical documentation
 ├── sources/
 │   ├── wget-list.txt           # 90 package URLs

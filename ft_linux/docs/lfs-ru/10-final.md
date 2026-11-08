@@ -81,7 +81,6 @@ shasum disk.vdi
 
 - Официальный LFS: https://www.linuxfromscratch.org/lfs/view/stable/
 - BLFS (бонус): https://www.linuxfromscratch.org/blfs/view/stable/
-- План проекта: [PLAN.md](../../PLAN.md)
 - Техдок репозитория: [docs/](../README.md)
 
 ## Заключение
