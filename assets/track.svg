@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#090d16"/>
+      <stop offset="1" stop-color="#0a2530"/>
+    </linearGradient>
+    <filter id="glowCyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#00babc" flood-opacity="0.55"/>
+    </filter>
+    <filter id="glowOrange" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#e8b38f" flood-opacity="0.45"/>
+    </filter>
+    <style>
+      .edge { stroke: #5c5e63; stroke-width: 7; stroke-linecap: round; }
+      .node circle { fill: #46474c; stroke-width: 6; }
+      .node text { font-weight: 700; text-anchor: middle; dominant-baseline: central; }
+      .done circle { stroke: #00babc; filter: url(#glowCyan); }
+      .done text { fill: #19d3d5; }
+      .wip circle { stroke: #e8b38f; filter: url(#glowOrange); }
+      .wip text { fill: #f0c4a4; }
+      .locked circle { stroke: #6a6c72; stroke-width: 4; }
+      .locked text { fill: #8a8d94; }
+      .big { font-size: 19px; }
+      .mid { font-size: 14px; }
+      .small { font-size: 12px; }
+      .legend text { font-size: 14px; fill: #aab2bd; dominant-baseline: central; }
+      .legend circle { fill: #46474c; stroke-width: 3; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="620" rx="18" fill="url(#bg)"/>
+
+  <path d="M 40 -10 Q 95 310 40 640" fill="none" stroke="#00babc" stroke-width="3" opacity="0.85"/>
+  <line x1="62" y1="470" x2="92" y2="470" stroke="#00babc" stroke-width="8"/>
+
+  <text x="960" y="72" text-anchor="end" font-size="26" font-weight="800" fill="#e6edf3" letter-spacing="3">42 KERNEL TRACK</text>
+  <text x="960" y="100" text-anchor="end" font-size="13" fill="#7d8590" letter-spacing="1">from Linux From Scratch to your own UNIX kernel</text>
+
+  <g class="legend" transform="translate(800 140)">
+    <circle cx="0" cy="0" r="9" stroke="#00babc"/>
+    <text x="22" y="0">Validated</text>
+    <circle cx="0" cy="32" r="9" stroke="#e8b38f"/>
+    <text x="22" y="32">In progress</text>
+    <circle cx="0" cy="64" r="9" stroke="#6a6c72"/>
+    <text x="22" y="64">Locked</text>
+  </g>
+
+  <g>
+    <line class="edge" x1="140" y1="470" x2="290" y2="380"/>
+    <line class="edge" x1="290" y1="380" x2="170" y2="260"/>
+    <line class="edge" x1="290" y1="380" x2="300" y2="170"/>
+    <line class="edge" x1="290" y1="380" x2="430" y2="240"/>
+    <line class="edge" x1="300" y1="170" x2="430" y2="90"/>
+    <line class="edge" x1="430" y1="240" x2="430" y2="90"/>
+    <line class="edge" x1="290" y1="380" x2="290" y2="530"/>
+    <polyline class="edge" fill="none" stroke-linejoin="round" points="290,530 420,410 420,530 550,410 550,530 680,410 680,530 810,410 810,530 930,460"/>
+  </g>
+
+  <g class="node done"><circle cx="140" cy="470" r="50"/><text class="big" x="140" y="470">ft_linux</text></g>
+  <g class="node done"><circle cx="290" cy="380" r="50"/><text class="mid" x="290" y="380"><tspan x="290" dy="-9">little-</tspan><tspan x="290" dy="18">penguin-1</tspan></text></g>
+  <g class="node wip"><circle cx="170" cy="260" r="50"/><text class="small" x="170" y="260"><tspan x="170" dy="-8">userspace_</tspan><tspan x="170" dy="16">digression</tspan></text></g>
+  <g class="node done"><circle cx="300" cy="170" r="50"/><text class="small" x="300" y="170"><tspan x="300" dy="-8">drivers-and-</tspan><tspan x="300" dy="16">interrupts</tspan></text></g>
+  <g class="node done"><circle cx="430" cy="240" r="50"/><text class="small" x="430" y="240"><tspan x="430" dy="-8">process-and-</tspan><tspan x="430" dy="16">memory</tspan></text></g>
+  <g class="node wip"><circle cx="430" cy="90" r="50"/><text class="mid" x="430" y="90">filesystem</text></g>
+
+  <g class="node wip"><circle cx="290" cy="530" r="50"/><text class="big" x="290" y="530">kfs-1</text></g>
+  <g class="node wip"><circle cx="420" cy="410" r="50"/><text class="big" x="420" y="410">kfs-2</text></g>
+  <g class="node locked"><circle cx="420" cy="530" r="50"/><text class="big" x="420" y="530">kfs-3</text></g>
+  <g class="node locked"><circle cx="550" cy="410" r="50"/><text class="big" x="550" y="410">kfs-4</text></g>
+  <g class="node locked"><circle cx="550" cy="530" r="50"/><text class="big" x="550" y="530">kfs-5</text></g>
+  <g class="node locked"><circle cx="680" cy="410" r="50"/><text class="big" x="680" y="410">kfs-6</text></g>
+  <g class="node locked"><circle cx="680" cy="530" r="50"/><text class="big" x="680" y="530">kfs-7</text></g>
+  <g class="node locked"><circle cx="810" cy="410" r="50"/><text class="big" x="810" y="410">kfs-8</text></g>
+  <g class="node locked"><circle cx="810" cy="530" r="50"/><text class="big" x="810" y="530">kfs-9</text></g>
+  <g class="node locked"><circle cx="930" cy="460" r="50"/><text class="big" x="930" y="460">kfs-x</text></g>
+</svg>
