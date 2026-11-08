@@ -7,17 +7,47 @@ Each project lives in its own directory and has its own `README.md` / `PLAN.md` 
 ## Track map
 
 ```mermaid
-graph LR
-    ft_linux --> little-penguin-1
-    little-penguin-1 --> userspace_digression
-    little-penguin-1 --> drivers-and-interrupts
-    little-penguin-1 --> process-and-memory
-    drivers-and-interrupts --> filesystem
-    process-and-memory --> filesystem
-    little-penguin-1 --> kfs-1
-    kfs-1 --> kfs-2 --> kfs-3 --> kfs-4 --> kfs-5
-    kfs-5 --> kfs-6 --> kfs-7 --> kfs-8 --> kfs-9 --> kfs-x
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Inter, Helvetica, Arial, sans-serif", "fontSize": "15px", "lineColor": "#8b949e", "titleColor": "#c9d1d9", "clusterBkg": "#161b2280", "clusterBorder": "#30363d"}, "flowchart": {"curve": "basis", "nodeSpacing": 25, "rankSpacing": 50, "padding": 12}}}%%
+flowchart LR
+    ft_linux(["🐧 ft_linux"]):::done
+    lp1(["little-penguin-1"]):::done
+
+    subgraph LINUX ["Linux Kernel Development"]
+        direction LR
+        ud(["userspace_digression"]):::todo
+        di(["drivers-and-interrupts"]):::done
+        pm(["process-and-memory"]):::done
+        fs(["filesystem"]):::todo
+        di --> fs
+        pm --> fs
+    end
+
+    subgraph KFS ["Kernel From Scratch"]
+        direction TB
+        subgraph KFS_A [" "]
+            direction LR
+            kfs1(["kfs-1"]):::wip --> kfs2(["kfs-2"]):::wip --> kfs3(["kfs-3"]):::locked --> kfs4(["kfs-4"]):::locked --> kfs5(["kfs-5"]):::locked
+        end
+        subgraph KFS_B [" "]
+            direction LR
+            kfs6(["kfs-6"]):::locked --> kfs7(["kfs-7"]):::locked --> kfs8(["kfs-8"]):::locked --> kfs9(["kfs-9"]):::locked --> kfsx(["⭐ kfs-x"]):::locked
+        end
+        KFS_A --> KFS_B
+    end
+
+    ft_linux ==> lp1
+    lp1 ==> LINUX
+    lp1 ==> KFS
+
+    classDef done fill:#0d3b40,stroke:#00babc,stroke-width:3px,color:#e6fffe
+    classDef wip fill:#3d2a1f,stroke:#e8b38f,stroke-width:3px,color:#fff4ec
+    classDef todo fill:#2d2a26,stroke:#e8b38f,stroke-width:2px,stroke-dasharray:5 3,color:#e8b38f
+    classDef locked fill:#2b2d31,stroke:#6e7681,stroke-width:2px,color:#9da5ae
+    style KFS_A fill:none,stroke:none
+    style KFS_B fill:none,stroke:none
 ```
+
+<sub>🟦 Done &nbsp;·&nbsp; 🟧 In progress &nbsp;·&nbsp; ⬜ Locked &nbsp;·&nbsp; dashed — available</sub>
 
 ## Projects
 
