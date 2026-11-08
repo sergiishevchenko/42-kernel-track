@@ -7,7 +7,7 @@ Each project lives in its own directory and has its own `README.md` / `PLAN.md` 
 ## Track map
 
 <p align="center">
-  <img src="assets/track.svg" alt="42 Kernel Track map" width="100%">
+  <img src="assets/track.svg?v=2" alt="42 Kernel Track map" width="100%">
 </p>
 
 ## Projects
