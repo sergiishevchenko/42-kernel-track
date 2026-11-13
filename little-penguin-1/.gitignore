@@ -1,0 +1,12 @@
+*.ko
+*.o
+*.mod
+*.mod.c
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+.DS_Store
+include/
+compile_flags.txt
+bootstrap/
